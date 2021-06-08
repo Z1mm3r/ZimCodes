@@ -22,14 +22,13 @@ const Header = (props) => {
             })}
         >
             Header
-            <IconButton>
+            <IconButton onClick={toggleLighting}>
                 <LightbulbIcon 
                     className={
                         cx({
                             [`${styles.lightModeLightbulb}`]: lighting === "light",
                             [`${styles.darkModeLightbulb}`]: lighting === "dark",  
                         })}
-                    onClick={toggleLighting}
                 />
             </IconButton>
         </div>
