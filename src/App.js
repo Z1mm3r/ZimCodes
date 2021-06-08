@@ -4,14 +4,14 @@ import './App.css';
 import React, {createContext,useState} from 'react'
 
 import Header from './components/Header'
-import IndexHero from './components/IndexHero'
+import IndexPage from './screens/IndexPage'
 import LightingContext from './components/LightingContext'
 
 
 
 function App() {
 
-  const [lighting,setLighting] = useState('light')
+  const [lighting,setLighting] = useState('dark')
 
   const toggleLighting = () => {
     setLighting( lighting === "light" ? "dark" : "light")
@@ -22,8 +22,7 @@ function App() {
     <div className="App">
       <LightingContext.Provider value={{ lighting,toggleLighting}}>
         <Header/>
-        <IndexHero>
-        </IndexHero>
+        <IndexPage/>
       </LightingContext.Provider>
     </div>
   );
