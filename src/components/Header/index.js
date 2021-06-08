@@ -1,5 +1,5 @@
 import react from 'react'
-import useStyles from '../../utils/useStyles.js'
+import useStyles from 'utils/useStyles.js'
 import {makeStyles} from '@material-ui/core'
 
 import Header from './Header.js'
