@@ -1,11 +1,11 @@
-import {px} from 'utils/utils.js'
+import {em,px} from 'utils/utils.js'
 
 const styles = {
     heroContainer:{
         width: '100%',
     },
     heroText:{
-        
+        fontSize: em(12)
     },
     lightContainer:{
         background:'white',
