@@ -1,4 +1,4 @@
-import {em,px} from 'utils/utils.js'
+import {em} from 'utils/utils.js'
 
 const styles = {
     heroContainer:{
