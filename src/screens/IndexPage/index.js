@@ -1,5 +1,4 @@
 import React from 'react'
-import cx from 'classnames'
 import Grid from '@material-ui/core/Grid'
 
 import IndexHero from './IndexHero'

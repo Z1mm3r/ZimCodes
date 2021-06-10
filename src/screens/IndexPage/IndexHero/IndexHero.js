@@ -1,11 +1,10 @@
-import react, {useContext, useState} from 'react'
+import React, {useContext, useState, useEffect} from 'react'
 import cx from 'classnames'
 import { config,useSpring,animated } from '@react-spring/web'
-import Typography from '@material-ui/core/Typography'
 
 import LightingContext from  'components/LightingContext'
-import { FilledInput } from '@material-ui/core';
-import { fileURLToPath } from 'url';
+import {LIGHT} from 'constants/colors'
+
 
 
 const IndexHero =  (props) => {
@@ -13,7 +12,12 @@ const IndexHero =  (props) => {
         classes,
     } = {...props}
 
+    const {lighting} = useContext(LightingContext);
     const [flip, setFlip] = useState(false)
+
+    useEffect(() =>{
+        setFlip(true)
+    },[lighting])
 
     const darkAnimationProps = useSpring({
         from: {
@@ -27,10 +31,8 @@ const IndexHero =  (props) => {
             color:'yellow',
         },
         config: config.molasses,
-        reset: true,
-        reverse: flip,
-        delay: 200,
-        onRest: () => setFlip(!flip),
+        reset: flip,
+        onRest: () => setFlip(false),
     })
 
     const brightAnimationProps = useSpring({
@@ -43,27 +45,24 @@ const IndexHero =  (props) => {
             color:'black',
         },
         config: config.molasses,
-        reset: true,
-        reverse: flip,
-        delay: 200,
-        onRest: () => setFlip(!flip),
+        reset: flip,
+        onRest: () => setFlip(false),
     })
 
-    const {lighting} = useContext(LightingContext);
 
     return (
         <div 
         className={
             cx(
                 classes.heroContainer,
-                lighting === "light" ?  classes.lightContainer : classes.darkContainer,)
+                lighting === LIGHT ?  classes.lightContainer : classes.darkContainer,)
         }>
             <div className= {
                 cx(
                     classes.heroText
                 )
             }>
-            <animated.div style={lighting === "light" ? brightAnimationProps : darkAnimationProps}>
+            <animated.div style={lighting === LIGHT ? brightAnimationProps : darkAnimationProps}>
                     Zim Codes  
             </animated.div>
             </div>
