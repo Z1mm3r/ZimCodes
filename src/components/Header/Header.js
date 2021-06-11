@@ -1,6 +1,5 @@
 import React, {useContext} from 'react'
 import cx from 'classnames'
-import {Parallax, ParallaxLayer} from '@react-spring/web'
 
 import Grid from '@material-ui/core/Grid'
 import IconButton from '@material-ui/core/IconButton'

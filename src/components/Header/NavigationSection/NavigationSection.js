@@ -28,7 +28,7 @@ const NavigationSection = (props) => {
                 <Grid item xs={3}>
                     <Link to="/about">
                         <Button color="primary" variant = "outlined">
-                                Home
+                                About
                         </Button>
                     </Link>
                 </Grid>
