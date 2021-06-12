@@ -1,11 +1,8 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 
-import IndexHero from './IndexHero'
 import AbsoluteWrapper from 'components/AbsoluteWrapper'
-
-
-
+import IndexHero from './IndexHero'
 
 const IndexPage = (props) => {
     const{
