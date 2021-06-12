@@ -1,10 +1,15 @@
 import React from 'react'
+import AbsoluteWrapper from 'components/AbsoluteWrapper'
+
 
 const Index = () => { 
     return(
-        <div>
-            About Page
-        </div>
+        <AbsoluteWrapper>
+            <div>
+                About Page
+            </div>
+        </AbsoluteWrapper>
+
     )
 }
 
