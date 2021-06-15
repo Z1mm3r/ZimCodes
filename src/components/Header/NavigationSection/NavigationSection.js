@@ -1,7 +1,7 @@
 import React from 'react'
 import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
-import {Link} from 'react-router-dom'
+import {Link, useLocation} from 'react-router-dom'
 import { useTheme } from '@material-ui/core/styles';
 
 
@@ -10,10 +10,9 @@ const NavigationSection = (props) => {
 
     const {classes,lighting} = {...props}
 
-    const theme = useTheme()
+    const currentPath = useLocation().pathname
 
-    console.log('render')
-    console.log(theme.palette.primary.main)
+    const theme = useTheme()
 
     const renderButtons = () =>{
         return(
