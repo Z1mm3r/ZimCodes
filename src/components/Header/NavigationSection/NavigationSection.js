@@ -12,9 +12,6 @@ const NavigationSection = (props) => {
 
     const theme = useTheme()
 
-    console.log('render')
-    console.log(theme.palette.primary.main)
-
     const renderButtons = () =>{
         return(
             <>

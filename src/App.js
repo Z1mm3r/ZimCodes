@@ -1,5 +1,5 @@
 import {createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles'
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import { Route, Switch, useLocation } from 'react-router-dom'
 import {useTransition, animated} from '@react-spring/web'
 
@@ -11,11 +11,12 @@ import {darkTheme, lightTheme, darkThemeTest, lightThemeTest} from './themes'
 import Header from './components/Header'
 import IndexPage from './screens/IndexPage'
 import LightingContext from './components/LightingContext'
-
+import {PAGE_LEFT_ENTER, PAGE_RIGHT_ENTER} from 'constants/transitions'
 
 import Button from '@material-ui/core/Button'
 
 const LOCATIONS = ["/","/about","/site"]
+
 
 function App() {
 
@@ -32,37 +33,35 @@ function App() {
     setTheme( createMuiTheme (lighting === LIGHT ? darkThemeTest: lightThemeTest) )
     setLighting( lighting === LIGHT ? DARK : LIGHT)
   }
-//------------------------------------------------------------------------------------
+//----------------------Page Transition Logic--------------------------------------------------------------
   const location = useLocation();
   const [previousLocation, setPreviousLocation] = useState(location.pathname)
-
-  let leftEnter = {
-    initial: {opacity: 1, transform: "translate(0%,0"},
-    from: { opacity: 0, transform: "translate(100%,0"},
-    enter: { opacity: 1, transform: "translate(0%,0"},
-    leave: { opacity: 0, transform: "translate(-60%,0"}} 
-  const rightEnter = { 
-    from: { opacity: 0, transform: "translate(-100%,0"},
-    enter: { opacity: 1, transform: "translate(0%,0"},
-    leave: { opacity: 0, transform: "translate(60%,0"}}
-
-  const [entranceSide, setEntranceSide] = useState(leftEnter)
-  const transitions = useTransition(location,entranceSide,[location,entranceSide])[0]
+  const [entranceSide, setEntranceSide] = useState(PAGE_LEFT_ENTER)
   const [left,setLeft] = useState(true)
-  const swapTransition = () => {
-    setEntranceSide(left ? leftEnter : rightEnter)
-    setLeft(!left)
-  }
 
-  if(location.pathName != previousLocation)
-    setPreviousLocation(location.pathName)
+  useEffect(() => {
+    if(LOCATIONS.indexOf(previousLocation) > LOCATIONS.indexOf(location.pathname)){
+      setLeft(false)
+      setPreviousLocation(location.pathname)
+    }
+    else if(LOCATIONS.indexOf(previousLocation) < LOCATIONS.indexOf(location.pathname)){
+      setLeft(true)
+      setPreviousLocation(location.pathname)
+    }
+  }, [location])
+
+  useEffect(() =>{
+    setEntranceSide(left ? PAGE_LEFT_ENTER : PAGE_RIGHT_ENTER)
+  },[left])
+
+  const transitions = useTransition(location,entranceSide,[location,entranceSide])[0]
+  //---------------------------------------------------------------------------------------
 
   return (
     <div className="App">
       <LightingContext.Provider value={{lighting,toggleLighting}}>
         <MuiThemeProvider theme={theme}>
           <Header/>
-          <Button onClick = {swapTransition} > Hello  </Button>
           {transitions((props,item) =>(
             <animated.div style={ props }>
               <Switch location={item}>
