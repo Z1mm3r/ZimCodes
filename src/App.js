@@ -47,19 +47,11 @@ function App() {
     leave: { opacity: 0, transform: "translate(60%,0"}}
 
   const [entranceSide, setEntranceSide] = useState(leftEnter)
-
-  console.log('testing')
-  let transitions = useTransition(location,entranceSide)
-  console.log(transitions)
-  transitions = useTransition(location,entranceSide,[entranceSide])
-  console.log(transitions)
-  
-  debugger
-
-  let left = true
+  const transitions = useTransition(location,entranceSide,[location,entranceSide])[0]
+  const [left,setLeft] = useState(true)
   const swapTransition = () => {
     setEntranceSide(left ? leftEnter : rightEnter)
-    left = !left
+    setLeft(!left)
   }
 
   if(location.pathName != previousLocation)
