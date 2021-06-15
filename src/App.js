@@ -7,16 +7,12 @@ import './App.css';
 import AboutPage from './screens/AboutMePage'
 import AboutSitePage from './screens/AboutSitePage'
 import {DARK, LIGHT} from 'constants/colors'
-import {darkTheme, lightTheme, darkThemeTest, lightThemeTest} from './themes'
+import {darkTheme, lightTheme} from './themes'
 import Header from './components/Header'
 import IndexPage from './screens/IndexPage'
 import LightingContext from './components/LightingContext'
+import  {LOCATIONS } from 'constants/constants.js'
 import {PAGE_LEFT_ENTER, PAGE_RIGHT_ENTER} from 'constants/transitions'
-
-import Button from '@material-ui/core/Button'
-
-const LOCATIONS = ["/","/about","/site"]
-
 
 function App() {
 
@@ -28,9 +24,9 @@ function App() {
   //IF we REMOVE React.strict... we can simply pass our themes in from the themes file
   //without using a themeState.
   //
-  const [theme, setTheme] = useState(createMuiTheme(lightThemeTest))
+  const [theme, setTheme] = useState(createMuiTheme(lightTheme))
   const toggleLighting = () => {
-    setTheme( createMuiTheme (lighting === LIGHT ? darkThemeTest: lightThemeTest) )
+    setTheme( createMuiTheme (lighting === LIGHT ? darkTheme: lightTheme) )
     setLighting( lighting === LIGHT ? DARK : LIGHT)
   }
 //----------------------Page Transition Logic--------------------------------------------------------------
@@ -55,7 +51,7 @@ function App() {
   },[left])
 
   const transitions = useTransition(location,entranceSide,[location,entranceSide])[0]
-  //---------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------
 
   return (
     <div className="App">
