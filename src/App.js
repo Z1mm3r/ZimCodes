@@ -12,6 +12,11 @@ import Header from './components/Header'
 import IndexPage from './screens/IndexPage'
 import LightingContext from './components/LightingContext'
 
+
+import Button from '@material-ui/core/Button'
+
+const LOCATIONS = ["/","/about","/site"]
+
 function App() {
 
   const [lighting,setLighting] = useState(LIGHT)
@@ -29,19 +34,45 @@ function App() {
   }
 //------------------------------------------------------------------------------------
   const location = useLocation();
-  const transitions = useTransition(location,{
+  const [previousLocation, setPreviousLocation] = useState(location.pathname)
+
+  let leftEnter = {
+    initial: {opacity: 1, transform: "translate(0%,0"},
     from: { opacity: 0, transform: "translate(100%,0"},
     enter: { opacity: 1, transform: "translate(0%,0"},
-    leave: { opacity: 0, transform: "translate(-50%,0"},
-  })
+    leave: { opacity: 0, transform: "translate(-60%,0"}} 
+  const rightEnter = { 
+    from: { opacity: 0, transform: "translate(-100%,0"},
+    enter: { opacity: 1, transform: "translate(0%,0"},
+    leave: { opacity: 0, transform: "translate(60%,0"}}
+
+  const [entranceSide, setEntranceSide] = useState(leftEnter)
+
+  console.log('testing')
+  let transitions = useTransition(location,entranceSide)
+  console.log(transitions)
+  transitions = useTransition(location,entranceSide,[entranceSide])
+  console.log(transitions)
+  
+  debugger
+
+  let left = true
+  const swapTransition = () => {
+    setEntranceSide(left ? leftEnter : rightEnter)
+    left = !left
+  }
+
+  if(location.pathName != previousLocation)
+    setPreviousLocation(location.pathName)
 
   return (
     <div className="App">
       <LightingContext.Provider value={{lighting,toggleLighting}}>
         <MuiThemeProvider theme={theme}>
           <Header/>
+          <Button onClick = {swapTransition} > Hello  </Button>
           {transitions((props,item) =>(
-            <animated.div style={props}>
+            <animated.div style={ props }>
               <Switch location={item}>
                 <Route exact path="/" component={IndexPage} />
                 <Route exact path="/about" component={AboutPage} />
