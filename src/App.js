@@ -36,6 +36,7 @@ function App() {
   const [left,setLeft] = useState(true)
 
   useEffect(() => {
+    console.log( "previous:" +  LOCATIONS.indexOf(previousLocation) + "    Next: " + LOCATIONS.indexOf(location.pathname))
     if(LOCATIONS.indexOf(previousLocation) > LOCATIONS.indexOf(location.pathname)){
       setLeft(false)
       setPreviousLocation(location.pathname)
@@ -48,6 +49,7 @@ function App() {
 
   useEffect(() =>{
     setEntranceSide(left ? PAGE_LEFT_ENTER : PAGE_RIGHT_ENTER)
+    console.log("Setting left entrance to ",left)
   },[left])
 
   const transitions = useTransition(location,entranceSide,[location,entranceSide])[0]
