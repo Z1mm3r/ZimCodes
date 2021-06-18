@@ -4,6 +4,8 @@ import Button from '@material-ui/core/Button'
 import {Link, useLocation} from 'react-router-dom'
 import { useTheme } from '@material-ui/core/styles';
 
+import NavButton from 'components/NavButton'
+
 
 
 const NavigationSection = (props) => {
@@ -18,18 +20,10 @@ const NavigationSection = (props) => {
         return(
             <>
                 <Grid item xs={3}>
-                    <Link to="/">
-                        <Button color = "secondary"  variant = "outlined">
-                                Home
-                        </Button>
-                    </Link>
+                    <NavButton path="/" label={"Home"}/>
                 </Grid>
                 <Grid item xs={3}>
-                    <Link to="/about">
-                        <Button color="primary" variant = "outlined">
-                                About
-                        </Button>
-                    </Link>
+                    <NavButton path="/about" label={"About"}/>
                 </Grid>
                 <Grid item xs={3}>
                     <Button color="primary" variant = "outlined">
@@ -37,11 +31,7 @@ const NavigationSection = (props) => {
                     </Button>
                 </Grid>
                 <Grid item xs={3}>
-                    <Link to="/site">
-                        <Button color="primary" variant = "outlined">
-                                About This Site
-                        </Button>
-                    </Link>
+                    <NavButton path="/site" label={"About Site"}/>
                 </Grid>
             </>
         )
