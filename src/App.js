@@ -34,25 +34,32 @@ function App() {
   const [previousLocation, setPreviousLocation] = useState(location.pathname)
   const [entranceSide, setEntranceSide] = useState(PAGE_LEFT_ENTER)
   const [left,setLeft] = useState(true)
+  //Using superSet to stop race conditions on our transition creations
+  const [superSet, setSuperSet] = useState({
+    location:location,
+    previousLocation:previousLocation,
+    left: left,
+    entranceSide: entranceSide
+   })
 
   useEffect(() => {
-    console.log( "previous:" +  LOCATIONS.indexOf(previousLocation) + "    Next: " + LOCATIONS.indexOf(location.pathname))
     if(LOCATIONS.indexOf(previousLocation) > LOCATIONS.indexOf(location.pathname)){
-      setLeft(false)
+      setEntranceSide(PAGE_LEFT_ENTER)
+      setLeft(true)
       setPreviousLocation(location.pathname)
     }
     else if(LOCATIONS.indexOf(previousLocation) < LOCATIONS.indexOf(location.pathname)){
-      setLeft(true)
+      setEntranceSide(PAGE_RIGHT_ENTER)
+      setLeft(false)
       setPreviousLocation(location.pathname)
     }
   }, [location])
 
   useEffect(() =>{
-    setEntranceSide(left ? PAGE_LEFT_ENTER : PAGE_RIGHT_ENTER)
-    console.log("Setting left entrance to ",left)
-  },[left])
+    setSuperSet({location,previousLocation,left,entranceSide})
+  },[previousLocation])
 
-  const transitions = useTransition(location,entranceSide,[location,entranceSide])[0]
+  const transitions= useTransition(superSet.location,superSet.entranceSide,[superSet.location,superSet.entranceSide])[0]
 //---------------------------------------------------------------------------------------
 
   return (
