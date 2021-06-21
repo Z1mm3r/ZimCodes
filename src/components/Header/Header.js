@@ -9,6 +9,8 @@ import NavigationSection from './NavigationSection'
 import LightingContext from  '../LightingContext'
 import {LIGHT,DARK} from 'constants/colors'
 
+import GradientBorder from 'components/GradientBorder'
+
 
 const Header = (props) => {
     const {
@@ -26,7 +28,7 @@ const Header = (props) => {
         >
             <Grid container  alignItems = "center">
                 <Grid item xs={3}>
-
+                    <GradientBorder/>
                 </Grid>
                 <Grid item xs={6}>
                     <NavigationSection lighting={lighting}/>
