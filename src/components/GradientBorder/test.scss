@@ -1,0 +1,23 @@
+.border {
+	--angle: 0deg;
+	width: 100%;
+	height: 100%;
+	border: 10px solid;
+	border-image: conic-gradient(from var(--angle), rgb(247, 247, 247), yellow, rgb(224, 5, 235), rgb(83, 208, 222)) 1;
+	
+	animation: 2s rotate linear infinite;
+}
+		
+@keyframes rotate {
+	to {
+		--angle: 360deg;
+	}
+}
+
+@property --angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+

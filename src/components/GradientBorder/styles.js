@@ -1,19 +1,22 @@
 const styles = {
+    
     div: {
+    '--test':'30deg',
     width: '100%',
     height: '100%',
     border: '10px solid',
-    'border-image': 'conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1',
-    animation: `$rotate 50ms linear infinite`
+    borderImage: 'conic-gradient(from var(--test), red, yellow, lime, aqua, blue, magenta, red) 1',
+    transform: 'rotate(var(--test))',
+    animation: `$rotate 1s linear infinite`
     },
 
     "@keyframes rotate": {
-        'to' : {
-        '--angle': '270deg'
+        '100%' : {
+        '--test': '360deg'
         }
     },
     
-    "@property --angle": {
+    "@property --test": {
         'syntax': '<angle>',
         'initial-value': '0deg',
         'inherits': false

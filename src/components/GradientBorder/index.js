@@ -1,5 +1,6 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core'
+import './test.scss'
 
 import styles from './styles.js'
 
@@ -12,9 +13,9 @@ const Index = (props) => {
     const classes = useStyle();
     console.log(classes)
     return(
-        <div className={classes.div}>
+        <div className={'border'}>
             <div>
-                hello
+                test
             </div>
         </div>
     )
