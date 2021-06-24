@@ -15,7 +15,7 @@ const Index = (props) => {
     return(
         <div className={'border'}>
             <div>
-                test
+                Zim Codes
             </div>
         </div>
     )
