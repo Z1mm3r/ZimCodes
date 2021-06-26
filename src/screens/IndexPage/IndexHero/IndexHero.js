@@ -1,6 +1,7 @@
 import React, {useContext, useState, useEffect} from 'react'
 import cx from 'classnames'
 import { config,useSpring,animated } from '@react-spring/web'
+import { useTheme } from '@material-ui/core/styles';
 
 import LightingContext from  'components/LightingContext'
 import {LIGHT} from 'constants/colors'
@@ -19,14 +20,14 @@ const IndexHero =  (props) => {
         setFlip(true)
     },[lighting])
 
+    const theme = useTheme()
+
     const darkAnimationProps = useSpring({
         from: {
-            textShadow: '1px 1px 1px white',
             color: 'white',
             opacity:0
         },
         to: {
-            textShadow: '1px 1px 75px orange',
             opacity:1,
             color:'yellow',
         },
@@ -63,7 +64,7 @@ const IndexHero =  (props) => {
                 )
             }>
             <animated.div style={lighting === LIGHT ? brightAnimationProps : darkAnimationProps}>
-                    Zim Codes  
+                    Lets Build Together 
             </animated.div>
             </div>
         </div>

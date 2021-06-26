@@ -5,7 +5,7 @@ const styles = {
         width: '100%',
     },
     heroText:{
-        fontSize: em(12)
+        fontSize: em(10)
     },
     lightContainer:{
         background:'white',

@@ -6,6 +6,7 @@ import { useTheme } from '@material-ui/core/styles';
 
 import NavButton from 'components/NavButton'
 import GradientBorder from  'components/GradientBorder'
+import Logo from 'components/Logo';
 
 
 
@@ -28,7 +29,9 @@ const NavigationSection = (props) => {
                 </Grid>
                 <Grid item xs={1}/>
                 <Grid item xs={2}>
-                        <GradientBorder/>
+                        <GradientBorder>
+                            <Logo/>
+                        </GradientBorder>
                 </Grid>
                 <Grid item xs={1}/>
 
