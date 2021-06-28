@@ -1,4 +1,5 @@
 import {createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles'
+import CssBaseline from '@material-ui/core/CssBaseline'
 import React, {useState, useEffect} from 'react'
 import { Route, Switch, useLocation } from 'react-router-dom'
 import {useTransition, animated} from '@react-spring/web'
@@ -66,6 +67,7 @@ function App() {
     <div className="App">
       <LightingContext.Provider value={{lighting,toggleLighting}}>
         <MuiThemeProvider theme={theme}>
+          <CssBaseline />
           <Header/>
           {transitions((props,item) =>(
             <animated.div style={ props }>

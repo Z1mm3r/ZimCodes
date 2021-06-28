@@ -32,7 +32,10 @@ import lightBlue from  '@material-ui/core/colors/lightBlue'
         main: grey[50],
       },
       secondary:{
-        main: yellow[500],
+        main: lightBlue[200],
+      },
+      background:{
+        default:"#000000"
       }
     }
   };
@@ -44,6 +47,9 @@ export const lightTheme = {
       },
       secondary:{
         main: lightBlue[500],
+      },
+      background:{
+        default:"#FFFFFF",
       }
     }
   };
