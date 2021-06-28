@@ -18,6 +18,9 @@ const IndexPage = (props) => {
                 <Grid item xs={12}>
                     <IndexHero/>
                 </Grid>
+                <Grid item xs={12}>
+                    
+                </Grid>
             </Grid>
         </AbsoluteWrapper>
     )
