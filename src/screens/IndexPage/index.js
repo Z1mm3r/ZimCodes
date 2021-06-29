@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid'
 
 import AbsoluteWrapper from 'components/AbsoluteWrapper'
 import IndexHero from './IndexHero'
+import TechSection from './TechSection'
 
 const IndexPage = (props) => {
     const{
@@ -19,7 +20,7 @@ const IndexPage = (props) => {
                     <IndexHero/>
                 </Grid>
                 <Grid item xs={12}>
-                    
+                    <TechSection/>
                 </Grid>
             </Grid>
         </AbsoluteWrapper>

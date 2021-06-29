@@ -7,6 +7,10 @@ const styles = {
     heroText:{
         fontSize: em(10)
     },
+    lightContainer:{
+    },
+    darkContainer:{
+    }
 }
 
 export default styles

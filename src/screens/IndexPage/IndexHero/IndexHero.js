@@ -52,20 +52,11 @@ const IndexHero =  (props) => {
 
 
     return (
-        <div 
-        className={
-            cx(
-                classes.heroContainer,
-                lighting === LIGHT ?  classes.lightContainer : classes.darkContainer,)
-        }>
-            <div className= {
-                cx(
-                    classes.heroText
-                )
-            }>
-            <animated.div style={lighting === LIGHT ? brightAnimationProps : darkAnimationProps}>
-                    Lets Build Together 
-            </animated.div>
+        <div className={cx(classes.heroContainer)}>
+            <div className= {cx(classes.heroText)}>
+                <animated.div style={lighting === LIGHT ? brightAnimationProps : darkAnimationProps}>
+                        Lets Build Together 
+                </animated.div>
             </div>
         </div>
     )
