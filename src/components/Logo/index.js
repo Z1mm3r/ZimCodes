@@ -17,7 +17,7 @@ const Logo = (props) => {
     return(
         <Card className={cx({[`${classes.fullHeight}`] : !!full})}>
             <Grid  align= "center" container direction="column" justify = "center" spacing={0} className={cx({[`${classes.fullHeight}`] : !!full})}>
-                <Grid items>
+                <Grid item>
                     <CardContent>
                         <div>
                             <CardMedia

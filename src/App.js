@@ -60,7 +60,7 @@ function App() {
     setSuperSet({location,previousLocation,left,entranceSide})
   },[previousLocation])
 
-  const transitions= useTransition(superSet.location,superSet.entranceSide,[superSet.location,superSet.entranceSide])[0]
+  const transitions = useTransition(superSet.location,superSet.entranceSide,[superSet.location,superSet.entranceSide])[0]
 //---------------------------------------------------------------------------------------
 
   return (
