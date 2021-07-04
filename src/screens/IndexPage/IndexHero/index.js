@@ -8,9 +8,12 @@ import styles from './styles.js'
 const useStyle = makeStyles(styles)
 
 const Index =  function(props){
+    const {
+        lerpVal
+    } = {...props}
     const classes = useStyle(props);
     return(
-        <IndexHero classes={classes}/>
+        <IndexHero {...props} classes={classes}/>
     )
 }
 

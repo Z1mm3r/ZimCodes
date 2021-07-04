@@ -6,12 +6,29 @@ import { useTheme } from '@material-ui/core/styles';
 import LightingContext from  'components/LightingContext'
 import {LIGHT} from 'constants/colors'
 
+import {em,lerp} from 'utils/utils'
+
 
 
 const IndexHero =  (props) => {
     const {
         classes,
+        lerpVal,
     } = {...props}
+
+    const [heroText, setHeroText] = useState(null)
+
+    useEffect(()=>{
+        setHeroText(document.getElementById("hero-text"))
+    },[])
+
+    useEffect(()=>{
+        console.log(heroText)
+        if(heroText)
+            heroText.style.fontSize = em(lerp(6,10,lerpVal))
+    },[lerpVal])
+
+    
 
     const {lighting} = useContext(LightingContext);
     const [flip, setFlip] = useState(false)
@@ -49,14 +66,15 @@ const IndexHero =  (props) => {
         reset: flip,
         onRest: () => setFlip(false),
     })
+    // <animated.div style={lighting === LIGHT ? brightAnimationProps : darkAnimationProps}>
+    //                     Lets Build Together 
+    //             </animated.div>
 
 
     return (
         <div className={cx(classes.heroContainer)}>
-            <div className= {cx(classes.heroText)}>
-                <animated.div style={lighting === LIGHT ? brightAnimationProps : darkAnimationProps}>
-                        Lets Build Together 
-                </animated.div>
+            <div id={"hero-text"} className= {cx(classes.heroText)}>
+                    Lets Build Together 
             </div>
         </div>
     )
