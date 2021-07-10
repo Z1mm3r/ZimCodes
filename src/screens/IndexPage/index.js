@@ -81,6 +81,8 @@ const IndexPage = () => {
             window.removeEventListener('resize', handleWindowResize);
         }
     },[])
+    
+    //TODO note: offset for tech section was 1.3 -> changed to 1.1 for now
 
     return(
         <AbsoluteWrapper>
@@ -93,7 +95,7 @@ const IndexPage = () => {
                                 <ScrollDownText lerpVal={lerpVal} />
                             </Grid>
                         </ParallaxLayer>
-                        <ParallaxLayer offset={1.3}>
+                        <ParallaxLayer offset={1.1}>
                             <Grid item xs={12}>
                                 <TechSection lerpVal={lerpVal}/>
                             </Grid>
