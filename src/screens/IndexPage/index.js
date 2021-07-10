@@ -8,6 +8,7 @@ import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import AbsoluteWrapper from 'components/AbsoluteWrapper'
 import IndexHero from './IndexHero'
 import TechSection from './TechSection'
+import ScrollDownText from './ScrollDownText'
 
 import styles from './styles.js'
 
@@ -89,14 +90,12 @@ const IndexPage = () => {
                         <ParallaxLayer className={"test-two"} sticky={{start:.1, end:2}}>
                             <Grid className={"test-3"} item xs={12}>
                                 <IndexHero lerpVal={lerpVal}/>
-                                <div className={classes.miniText}>
-                                    Scroll Down
-                                </div>
+                                <ScrollDownText lerpVal={lerpVal} />
                             </Grid>
                         </ParallaxLayer>
                         <ParallaxLayer offset={1.3}>
                             <Grid item xs={12}>
-                                <TechSection/>
+                                <TechSection lerpVal={lerpVal}/>
                             </Grid>
                         </ParallaxLayer>
                     </Parallax>

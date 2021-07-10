@@ -23,7 +23,7 @@ const IndexHero =  (props) => {
     },[])
 
     useEffect(()=>{
-        console.log(heroText)
+        //console.log(heroText)
         if(heroText)
             heroText.style.fontSize = em(lerp(6,10,lerpVal))
     },[lerpVal])
