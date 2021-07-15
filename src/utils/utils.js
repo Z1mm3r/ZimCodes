@@ -3,6 +3,10 @@ export const px = (string) => `${string}px`
 
 export const em = (string) => `${string}em`
 
+export const rem = (string) => `${string}rem`
+
+export const vw = (string) => `${string}vw`
+
 export const calcLerp = function(v0,v1, t){
     //this is calculating our lerp value.
     if(t < 0){

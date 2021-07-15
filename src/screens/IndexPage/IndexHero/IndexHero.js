@@ -2,11 +2,12 @@ import React, {useContext, useState, useEffect} from 'react'
 import cx from 'classnames'
 import { config,useSpring,animated } from '@react-spring/web'
 import { useTheme } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography'
 
 import LightingContext from  'components/LightingContext'
 import {LIGHT} from 'constants/colors'
 
-import {em,lerp} from 'utils/utils'
+import {vw,lerp} from 'utils/utils'
 
 
 
@@ -25,7 +26,7 @@ const IndexHero =  (props) => {
     useEffect(()=>{
         //console.log(heroText)
         if(heroText)
-            heroText.style.fontSize = em(lerp(6,10,lerpVal))
+            heroText.style.fontSize = vw(lerp(7,10,lerpVal))
     },[lerpVal])
 
     
@@ -73,9 +74,9 @@ const IndexHero =  (props) => {
 
     return (
         <div className={cx(classes.heroContainer)}>
-            <div id={"hero-text"} className= {cx(classes.heroText)}>
-                    Lets Build Together 
-            </div>
+                <div id={"hero-text"} className= {cx(classes.heroText)}>
+                        Lets Build Together 
+                </div>
         </div>
     )
 }

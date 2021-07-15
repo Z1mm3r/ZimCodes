@@ -95,7 +95,7 @@ const IndexPage = () => {
                                 <ScrollDownText lerpVal={lerpVal} />
                             </Grid>
                         </ParallaxLayer>
-                        <ParallaxLayer offset={1.1}>
+                        <ParallaxLayer offset={1.1} speed={.5}>
                             <Grid item xs={12}>
                                 <TechSection lerpVal={lerpVal}/>
                             </Grid>

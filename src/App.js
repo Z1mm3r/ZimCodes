@@ -3,6 +3,7 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import React, {useState, useEffect} from 'react'
 import { Route, Switch, useLocation } from 'react-router-dom'
 import {useTransition, animated} from '@react-spring/web'
+import Paper from '@material-ui/core/Paper'
 
 import './App.css';
 import AboutPage from './screens/AboutMePage'
@@ -67,17 +68,17 @@ function App() {
     <div className="App">
       <LightingContext.Provider value={{lighting,toggleLighting}}>
         <MuiThemeProvider theme={theme}>
-          <CssBaseline />
-          <Header/>
-          {transitions((props,item) =>(
-            <animated.div style={ props }>
-              <Switch location={item}>
-                <Route exact path="/" component={IndexPage} />
-                <Route exact path="/about" component={AboutPage} />
-                <Route exact path="/site" component={AboutSitePage} />
-              </Switch>
-            </animated.div>
-          ))}
+            <CssBaseline />
+            <Header/>
+            {transitions((props,item) =>(
+              <animated.div style={ props }>
+                <Switch location={item}>
+                  <Route exact path="/" component={IndexPage} />
+                  <Route exact path="/about" component={AboutPage} />
+                  <Route exact path="/site" component={AboutSitePage} />
+                </Switch>
+              </animated.div>
+            ))}
         </MuiThemeProvider  >
       </LightingContext.Provider>
     </div>
