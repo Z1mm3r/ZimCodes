@@ -1,8 +1,8 @@
- import {em} from 'utils/utils.js'
+ import {rem} from 'utils/utils.js'
 
  const styles = {
     mainText:{
-        fontSize: em(4)
+        fontSize: rem(4)
     }
 }
 
