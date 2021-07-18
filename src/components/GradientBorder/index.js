@@ -11,7 +11,6 @@ const useStyle = makeStyles(styles)
 
 const Index = (props) => {
     const classes = useStyle();
-    console.log(classes)
     return(
         <div className={'border'}>
             <div>

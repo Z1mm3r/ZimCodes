@@ -4,7 +4,8 @@ import {makeStyles} from '@material-ui/core'
 const styles = {
     wrapper:{
         position: "absolute",
-        width: "100%"
+        width: "85%",
+        margin: "0% 7.5%"
     }
 }
 

@@ -60,24 +60,24 @@ function App() {
     setSuperSet({location,previousLocation,left,entranceSide})
   },[previousLocation])
 
-  const transitions= useTransition(superSet.location,superSet.entranceSide,[superSet.location,superSet.entranceSide])[0]
+  const transitions = useTransition(superSet.location,superSet.entranceSide,[superSet.location,superSet.entranceSide])[0]
 //---------------------------------------------------------------------------------------
 
   return (
     <div className="App">
       <LightingContext.Provider value={{lighting,toggleLighting}}>
         <MuiThemeProvider theme={theme}>
-          <CssBaseline />
-          <Header/>
-          {transitions((props,item) =>(
-            <animated.div style={ props }>
-              <Switch location={item}>
-                <Route exact path="/" component={IndexPage} />
-                <Route exact path="/about" component={AboutPage} />
-                <Route exact path="/site" component={AboutSitePage} />
-              </Switch>
-            </animated.div>
-          ))}
+            <CssBaseline />
+            <Header/>
+            {transitions((props,item) =>(
+              <animated.div style={ props }>
+                <Switch location={item}>
+                  <Route exact path="/" component={IndexPage} />
+                  <Route exact path="/about" component={AboutPage} />
+                  <Route exact path="/site" component={AboutSitePage} />
+                </Switch>
+              </animated.div>
+            ))}
         </MuiThemeProvider  >
       </LightingContext.Provider>
     </div>

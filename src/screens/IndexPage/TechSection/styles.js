@@ -1,14 +1,16 @@
-import {vw} from 'utils/utils.js'
+import {em} from 'utils/utils.js'
 
 const styles = {
     heroContainer:{
         width: '100%',
     },
     heroText:{
-        fontSize: vw(10),
-        whiteSpace: "nowrap"
-
+        fontSize: em(10)
     },
+    lightContainer:{
+    },
+    darkContainer:{
+    }
 }
 
 export default styles
