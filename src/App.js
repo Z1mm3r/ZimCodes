@@ -3,7 +3,6 @@ import CssBaseline from '@material-ui/core/CssBaseline'
 import React, {useState, useEffect} from 'react'
 import { Route, Switch, useLocation } from 'react-router-dom'
 import {useTransition, animated} from '@react-spring/web'
-import Paper from '@material-ui/core/Paper'
 
 import './App.css';
 import AboutPage from './screens/AboutMePage'

@@ -24,12 +24,9 @@ const IndexHero =  (props) => {
     },[])
 
     useEffect(()=>{
-        //console.log(heroText)
         if(heroText)
             heroText.style.fontSize = vw(lerp(7,10,lerpVal))
     },[lerpVal])
-
-    
 
     const {lighting} = useContext(LightingContext);
     const [flip, setFlip] = useState(false)
@@ -38,35 +35,34 @@ const IndexHero =  (props) => {
         setFlip(true)
     },[lighting])
 
-    const theme = useTheme()
 
-    const darkAnimationProps = useSpring({
-        from: {
-            color: 'white',
-            opacity:0
-        },
-        to: {
-            opacity:1,
-            color:'yellow',
-        },
-        config: config.molasses,
-        reset: flip,
-        onRest: () => setFlip(false),
-    })
+    // const darkAnimationProps = useSpring({
+    //     from: {
+    //         color: 'white',
+    //         opacity:0
+    //     },
+    //     to: {
+    //         opacity:1,
+    //         color:'yellow',
+    //     },
+    //     config: config.molasses,
+    //     reset: flip,
+    //     onRest: () => setFlip(false),
+    // })
 
-    const brightAnimationProps = useSpring({
-        from: {
-            color: 'white',
-            opacity:0
-        },
-        to: {
-            opacity:1,
-            color:'black',
-        },
-        config: config.molasses,
-        reset: flip,
-        onRest: () => setFlip(false),
-    })
+    // const brightAnimationProps = useSpring({
+    //     from: {
+    //         color: 'white',
+    //         opacity:0
+    //     },
+    //     to: {
+    //         opacity:1,
+    //         color:'black',
+    //     },
+    //     config: config.molasses,
+    //     reset: flip,
+    //     onRest: () => setFlip(false),
+    // })
     // <animated.div style={lighting === LIGHT ? brightAnimationProps : darkAnimationProps}>
     //                     Lets Build Together 
     //             </animated.div>

@@ -43,9 +43,7 @@ const IndexPage = () => {
 
     const handleScroll = () => {
         if (parallaxRef.current) {
-          //console.log(parallaxRef.current.current)
           setScrollVal(parallaxRef.current.current)
-          //console.log(document.querySelector('.test-two'))
         }
     }
 
@@ -55,9 +53,6 @@ const IndexPage = () => {
     }
 
     useEffect(()=>{
-       // console.log('scroll',scrollVal)
-       // console.log('parraSize',parallaxSize)
-       // console.log('paraLayer', (parallaxLayer ? parallaxLayer.style.height : 0))
         if(scrollVal && parallaxSize && parallaxLayer)
             setLerpVal(calcLerp(parseInt(parallaxLayer.style.height),parallaxSize,scrollVal))
     },[scrollVal,parallaxSize,parallaxLayer])
