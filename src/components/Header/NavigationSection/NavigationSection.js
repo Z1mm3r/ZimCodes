@@ -36,9 +36,7 @@ const NavigationSection = (props) => {
                 <Grid item xs={1}/>
 
                 <Grid item xs={2}>
-                    <Button color="primary" variant = "outlined">
-                        CV
-                    </Button>
+                    <NavButton path="/resume" label={"Resume"}/>
                 </Grid>
                 <Grid item xs={2}>
                     <NavButton path="/site" label={"About Site"}/>

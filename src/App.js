@@ -14,6 +14,7 @@ import IndexPage from './screens/IndexPage'
 import LightingContext from './components/LightingContext'
 import  {LOCATIONS } from 'constants/constants.js'
 import {PAGE_LEFT_ENTER, PAGE_RIGHT_ENTER} from 'constants/transitions'
+import ResumePage from './screens/ResumePage'
 
 function App() {
 
@@ -74,6 +75,7 @@ function App() {
                 <Switch location={item}>
                   <Route exact path="/" component={IndexPage} />
                   <Route exact path="/about" component={AboutPage} />
+                  <Route exact path="/resume" component={ResumePage} />
                   <Route exact path="/site" component={AboutSitePage} />
                 </Switch>
               </animated.div>

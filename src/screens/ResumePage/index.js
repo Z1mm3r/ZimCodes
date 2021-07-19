@@ -1,0 +1,32 @@
+import React from 'react'
+
+import AbsoluteWrapper from 'components/AbsoluteWrapper'
+
+import Divider from '@material-ui/core/Divider'
+import Grid from '@material-ui/core/Grid'
+import Paper from '@material-ui/core/Paper'
+
+const Index = () =>{
+        return(
+            <AbsoluteWrapper>
+                <Paper>
+                    <Grid  container>
+                        <Grid item xs={5}>
+                            scammin
+                        </Grid>
+
+                        <Grid item align="center" xs={1}>
+                            <Divider orientation="vertical" />
+                        </Grid>
+
+                        <Grid item xs={5}>
+                            scammin
+                        </Grid>
+                    </Grid>
+                </Paper>
+            </AbsoluteWrapper>
+            
+        )
+    }
+
+export default Index
