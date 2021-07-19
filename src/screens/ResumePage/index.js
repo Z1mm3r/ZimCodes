@@ -1,6 +1,7 @@
 import React from 'react'
 
 import AbsoluteWrapper from 'components/AbsoluteWrapper'
+import SkillSection from './SkillSection'
 
 import Divider from '@material-ui/core/Divider'
 import Grid from '@material-ui/core/Grid'
@@ -12,9 +13,8 @@ const Index = () =>{
                 <Paper>
                     <Grid  container>
                         <Grid item xs={5}>
-                            scammin
+                            <SkillSection/>        
                         </Grid>
-
                         <Grid item align="center" xs={1}>
                             <Divider orientation="vertical" />
                         </Grid>
