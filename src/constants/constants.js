@@ -1,1 +1,1 @@
-export const LOCATIONS = ["/","/about","/site"]
+export const LOCATIONS = ["/","/about","/resume","/site"]
