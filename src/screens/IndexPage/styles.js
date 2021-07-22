@@ -1,17 +1,19 @@
+import {em, percent, vh, vw} from 'utils/utils'
+
 const styles = {
     gridContainer:{
         display: 'flex',
     },
     container:{
-        width:"100%",
-        height:"100%",
+        width:`${percent(100)}`,
+        height:`${percent(100)}`,
     },
     paraWrap:{
-        width:"100vw",
-        height:"85vh"
+        width:`${vw(100)}`,
+        height:`${vh(85)}`
     },
     miniText:{
-        fontSize:"4em"
+        fontSize:`${em(4)}`,
     }
 }
 

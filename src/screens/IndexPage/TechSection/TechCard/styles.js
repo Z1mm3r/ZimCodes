@@ -1,6 +1,8 @@
+import {percent} from 'utils/utils'
+
 const styles ={
     fullHeight:{
-        height:"100% !important"
+        height:`${percent(100)} !important`
     },
 }
  

@@ -1,8 +1,8 @@
-import {vw} from 'utils/utils.js'
+import {percent, vw} from 'utils/utils.js'
 
 const styles = {
     heroContainer:{
-        width: '100%',
+        width: `${percent(100)}`,
     },
     heroText:{
         fontSize: vw(10),

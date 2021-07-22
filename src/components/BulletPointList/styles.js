@@ -1,6 +1,9 @@
+import {percent} from 'utils/utils'
+
 const styles = {
     indentedList:{
-        marginLeft:"15%"
+        marginLeft: percent(15),
+        width: percent(85)
     }
 }
 

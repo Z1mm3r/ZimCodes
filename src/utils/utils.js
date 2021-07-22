@@ -7,6 +7,12 @@ export const rem = (string) => `${string}rem`
 
 export const vw = (string) => `${string}vw`
 
+export const vh = (string) => `${string}vh`
+
+export const percent = (string) => `${string}%`
+
+export const deg = (string) => `${string}deg`
+
 export const calcLerp = function(v0,v1, t){
     //this is calculating our lerp value.
     if(t < 0){
