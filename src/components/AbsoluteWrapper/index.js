@@ -1,11 +1,12 @@
 import React from 'react'
 import {makeStyles} from '@material-ui/core'
+import {percent} from 'utils/utils'
 
 const styles = {
     wrapper:{
         position: "absolute",
-        width: "85%",
-        margin: "0% 7.5%"
+        width: percent(85),
+        margin: `${percent(0)} ${percent(7.5)}`
     }
 }
 
