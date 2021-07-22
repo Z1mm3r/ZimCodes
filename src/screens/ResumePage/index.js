@@ -3,6 +3,7 @@ import React from 'react'
 import AbsoluteWrapper from 'components/AbsoluteWrapper'
 import PersonalSection from './PersonalSection'
 import SkillSection from './SkillSection'
+import WorkSection from './WorkSection'
 
 import Divider from '@material-ui/core/Divider'
 import Grid from '@material-ui/core/Grid'
@@ -31,7 +32,7 @@ const Index = () =>{
                         </Grid>
 
                         <Grid item xs={7}>
-                            scammin
+                            <WorkSection/>
                         </Grid>
                     </Grid>
                 </Paper>
