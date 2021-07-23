@@ -7,6 +7,9 @@ import JobDescription from './JobDescription'
 import {kindersmileJobCopy, freelanceJobCopy, ramapoJobCopy, totalRecallJobCopy, vydiaJobCopy} from 'constants/textCopys'
 
 const WorkSection = (props) =>{
+
+    const {classes} = {...props}
+
     return(
         <div>
             <Typography variant={"h4"}>
@@ -22,12 +25,17 @@ const WorkSection = (props) =>{
                 jobLocation={freelanceJobCopy.location}
             />
             <br/>
+            <Divider className={classes.smallDivider}/>
+            <br/>
+
             <JobDescription 
                 jobTitle={vydiaJobCopy.title}
                 employmentDate={vydiaJobCopy.date}
                 jobDetails={vydiaJobCopy.details}
                 jobLocation={vydiaJobCopy.location}
             />
+            <br/>
+            <Divider className={classes.smallDivider}/>
             <br/>
             <JobDescription 
                 jobTitle={totalRecallJobCopy.title}
@@ -36,12 +44,17 @@ const WorkSection = (props) =>{
                 jobLocation={totalRecallJobCopy.location}
             />
             <br/>
+            <Divider className={classes.smallDivider}/>
+            <br/>
             <JobDescription
                 jobTitle={kindersmileJobCopy.title}
                 employmentDate={kindersmileJobCopy.date}
                 jobDetails={kindersmileJobCopy.details}
                 jobLocation={kindersmileJobCopy.location}
             />
+            <br/>
+            <Divider className={classes.smallDivider}/>
+            <br/>
             <JobDescription
                 jobTitle={ramapoJobCopy.title}
                 employmentDate={ramapoJobCopy.date}
