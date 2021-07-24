@@ -6,9 +6,11 @@ const styles = {
     wrapper:{
         position: "absolute",
         width: percent(85),
-        margin: `${percent(0)} ${percent(7.5)}`
+        margin: `${percent(1.5)} ${percent(7.5)}`
     }
 }
+
+// old margin margin: `${percent(0)} ${percent(7.5)}`
 
 const useStyle = makeStyles(styles)
 
