@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '@material-ui/core/Button'
-import {Link, useLocation, useRouteMatch } from 'react-router-dom' 
+import {Link, useRouteMatch } from 'react-router-dom' 
 
 
 const NavButton = (props) => {
@@ -14,7 +14,7 @@ const NavButton = (props) => {
             </Button>
         )
         : (
-            <Link to={path}>
+            <Link data-testid="navButtonLink" to={path}>
                 <Button color="primary" variant = "outlined">
                     { label }
                 </Button>

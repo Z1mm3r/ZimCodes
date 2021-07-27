@@ -1,8 +1,18 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import React from 'react'
+import {render, screen} from '@testing-library/react'
+import App from './App.js' 
+import { MemoryRouter } from  'react-router-dom'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+jest.mock("react-router-dom", () => ({
+  ...jest.requireActual("react-router-dom"),
+  useLocation: () => ({
+    pathname: "localhost:3000"
+  }),
+  useRouteMatch: () => ({ url: '/'}),
+}));
+
+
+test('renders without crashing', () => {
+  const {asFragment} = render(<App />, {wrapper: MemoryRouter})
+  expect(asFragment()).toMatchSnapshot();
+})
