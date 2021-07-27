@@ -16,3 +16,25 @@ exports[`renders without crashing 1`] = `
   </button>
 </DocumentFragment>
 `;
+
+exports[`when the route does not match, is a clickable Link 1`] = `
+<DocumentFragment>
+  <a
+    data-testid="navButtonLink"
+    href="/wrong"
+  >
+    <button
+      class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+      tabindex="0"
+      type="button"
+    >
+      <span
+        class="MuiButton-label"
+      />
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
+  </a>
+</DocumentFragment>
+`;

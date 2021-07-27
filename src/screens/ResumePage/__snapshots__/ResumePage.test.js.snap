@@ -1,0 +1,1226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="makeStyles-lightMode-2"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-center"
+      >
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+        />
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+            >
+              <a
+                data-testid="navButtonLink"
+                href="/"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    Home
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </a>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+            >
+              <a
+                data-testid="navButtonLink"
+                href="/about"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    About
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </a>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1"
+            />
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+            >
+              <div
+                class="border"
+              >
+                <div>
+                  <div>
+                    <img
+                      class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img"
+                      src="/Images/WIP-LOGO.png"
+                      title="Zim Codes"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1"
+            />
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+            >
+              <button
+                class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedSecondary"
+                tabindex="0"
+                type="button"
+              >
+                <span
+                  class="MuiButton-label"
+                >
+                  Resume
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-2"
+            >
+              <a
+                data-testid="navButtonLink"
+                href="/site"
+              >
+                <button
+                  class="MuiButtonBase-root MuiButton-root MuiButton-outlined MuiButton-outlinedPrimary"
+                  tabindex="0"
+                  type="button"
+                >
+                  <span
+                    class="MuiButton-label"
+                  >
+                    About Site
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <span
+              class="MuiIconButton-label"
+            >
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root makeStyles-lightModeLightbulb-3 MuiSvgIcon-fontSizeLarge"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M3.55 18.54l1.41 1.41 1.79-1.8-1.41-1.41-1.79 1.8zM11 22.45h2V19.5h-2v2.95zM4 10.5H1v2h3v-2zm11-4.19V1.5H9v4.81C7.21 7.35 6 9.28 6 11.5c0 3.31 2.69 6 6 6s6-2.69 6-6c0-2.22-1.21-4.15-3-5.19zm5 4.19v2h3v-2h-3zm-2.76 7.66l1.79 1.8 1.41-1.41-1.8-1.79-1.4 1.4z"
+                />
+              </svg>
+            </span>
+            <span
+              class="MuiTouchRipple-root"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      style="opacity: 1; transform: translate(0%,0);"
+    >
+      <div
+        class="makeStyles-wrapper-9"
+      >
+        <div
+          class="MuiPaper-root MuiPaper-elevation1 MuiPaper-rounded"
+        >
+          <div
+            class="MuiGrid-root MuiGrid-container"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-3"
+            >
+              <div
+                class="makeStyles-container-10"
+              >
+                <div>
+                  <h4
+                    class="MuiTypography-root MuiTypography-h4"
+                  >
+                    Casey Zimmer
+                  </h4>
+                  <h5
+                    class="MuiTypography-root MuiTypography-h5"
+                  >
+                    Web Developer
+                  </h5>
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6"
+                  >
+                    Location
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    Newark, NJ
+                  </p>
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6"
+                  >
+                    Email
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    czimmerdev@gmail.com
+                  </p>
+                  <h6
+                    class="MuiTypography-root MuiTypography-h6"
+                  >
+                    GitHub
+                  </h6>
+                  <p
+                    class="MuiTypography-root MuiTypography-body2"
+                  >
+                    <a
+                      href="https://github.com/Z1mm3r"
+                    >
+                      Z1mm3r 
+                    </a>
+                  </p>
+                </div>
+                <h5
+                  class="MuiTypography-root MuiTypography-h5"
+                >
+                  Technical Skills
+                </h5>
+                <hr
+                  class="MuiDivider-root"
+                />
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  React.js
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="98"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-2%);"
+                    />
+                  </div>
+                </div>
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  Javascript
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="98"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-2%);"
+                    />
+                  </div>
+                </div>
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  Redux
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="90"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-10%);"
+                    />
+                  </div>
+                </div>
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  Ruby
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="85"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-15%);"
+                    />
+                  </div>
+                </div>
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  HTML
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="80"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-20%);"
+                    />
+                  </div>
+                </div>
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  CSS
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="80"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-20%);"
+                    />
+                  </div>
+                </div>
+                <hr
+                  class="MuiDivider-root"
+                />
+                <br />
+                <h5
+                  class="MuiTypography-root MuiTypography-h5"
+                >
+                  Soft Skills
+                </h5>
+                <hr
+                  class="MuiDivider-root"
+                />
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  Collaboration
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="99"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-1%);"
+                    />
+                  </div>
+                </div>
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  Problem Solving
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="98"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-2%);"
+                    />
+                  </div>
+                </div>
+                <h6
+                  class="MuiTypography-root MuiTypography-h6 MuiTypography-alignLeft"
+                >
+                  Adaptability
+                </h6>
+                <div>
+                  <div
+                    aria-valuemax="100"
+                    aria-valuemin="0"
+                    aria-valuenow="95"
+                    class="MuiLinearProgress-root makeStyles-root-11 MuiLinearProgress-colorPrimary MuiLinearProgress-determinate"
+                    role="progressbar"
+                  >
+                    <div
+                      class="MuiLinearProgress-bar MuiLinearProgress-barColorPrimary MuiLinearProgress-bar1Determinate"
+                      style="transform: translateX(-5%);"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              align="center"
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-1"
+            >
+              <hr
+                class="MuiDivider-root MuiDivider-vertical"
+              />
+            </div>
+            <div
+              class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-7"
+            >
+              <div>
+                <h4
+                  class="MuiTypography-root MuiTypography-h4"
+                >
+                  Employment History
+                </h4>
+                <br />
+                <hr
+                  class="MuiDivider-root"
+                />
+                <br />
+                <div
+                  class="MuiGrid-root MuiGrid-container"
+                >
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Freelance Web Developer
+                    </h6>
+                  </div>
+                  <div
+                    align="right"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      August 2020 - Current
+                    </h6>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <nav
+                      aria-label="main mailbox folders"
+                      class="MuiList-root MuiList-padding"
+                    >
+                      <h5
+                        class="MuiTypography-root MuiTypography-h5"
+                      />
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Worked on React component libraries and created various templates for Netlify CMS. Wrote code using React, React Hooks, Gatsby.js, Graphql.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root makeStyles-indentedList-13 MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Used React useState hooks and the Context API for state management.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root makeStyles-indentedList-13 MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Created and revised reusable components for their React library.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root makeStyles-indentedList-13 MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Enabled Server Side Rendering for pages using Gatsby.js.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root makeStyles-indentedList-13 MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Created admin dashboards using Netlify CMS for content creation.
+                          </span>
+                        </div>
+                      </li>
+                    </nav>
+                  </div>
+                </div>
+                <br />
+                <hr
+                  class="MuiDivider-root makeStyles-smallDivider-12"
+                />
+                <br />
+                <div
+                  class="MuiGrid-root MuiGrid-container"
+                >
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Vydia, Holmdel, NJ
+                    </h6>
+                  </div>
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Software Engineering Intern
+                    </h6>
+                  </div>
+                  <div
+                    align="right"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      June 2019 - February 2020
+                    </h6>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <nav
+                      aria-label="main mailbox folders"
+                      class="MuiList-root MuiList-padding"
+                    >
+                      <h5
+                        class="MuiTypography-root MuiTypography-h5"
+                      />
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Assisted in the development and implementation of production level code using React, React Hooks, React-Apollo, Redux, Ruby, Graphql and Flow.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root makeStyles-indentedList-13 MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Retrofitted older React code to handle React hooks.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root makeStyles-indentedList-13 MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Created and updated reusable components for the company’s React library.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root makeStyles-indentedList-13 MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Built sections of the Single Page Application based on design mock-ups.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Performed and assisted in code reviews; tested features and API’s for functionality, output and performance.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Contributed to planning sessions identifying sprint goals, estimating completion times on tasks  and other topics concerning the dev team.
+                          </span>
+                        </div>
+                      </li>
+                    </nav>
+                  </div>
+                </div>
+                <br />
+                <hr
+                  class="MuiDivider-root makeStyles-smallDivider-12"
+                />
+                <br />
+                <div
+                  class="MuiGrid-root MuiGrid-container"
+                >
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Total Recall Corporation, Suffern, NY
+                    </h6>
+                  </div>
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      IT Support Specialist 
+                    </h6>
+                  </div>
+                  <div
+                    align="right"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      October 2017 - September 2018
+                    </h6>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <nav
+                      aria-label="main mailbox folders"
+                      class="MuiList-root MuiList-padding"
+                    >
+                      <h5
+                        class="MuiTypography-root MuiTypography-h5"
+                      />
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Built and configured VMS, including hardware and software installation.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Regularly executed maintenance on hardware (Cameras, Servers, Wiring).
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Documented 1000s of network nodes to organized Visio maps.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Managed FTP connections to check hardware logs, and follow up with required actions.
+                          </span>
+                        </div>
+                      </li>
+                    </nav>
+                  </div>
+                </div>
+                <br />
+                <hr
+                  class="MuiDivider-root makeStyles-smallDivider-12"
+                />
+                <br />
+                <div
+                  class="MuiGrid-root MuiGrid-container"
+                >
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Kindersmile Foundation, Bloomfield, NJ
+                    </h6>
+                  </div>
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Interactive Application Software Architect
+                    </h6>
+                  </div>
+                  <div
+                    align="right"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      January 2016 - July 2017
+                    </h6>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <nav
+                      aria-label="main mailbox folders"
+                      class="MuiList-root MuiList-padding"
+                    >
+                      <h5
+                        class="MuiTypography-root MuiTypography-h5"
+                      />
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Managed a team in creation of an educational application for Android devices for pediatric patients.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root makeStyles-indentedList-13 MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M12 6c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6m0-2c-4.42 0-8 3.58-8 8s3.58 8 8 8 8-3.58 8-8-3.58-8-8-8z"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Utilized Unity Game Engine, written in C#, with a LAMP (Linux, Apache,MYSQL, PHP) stack for the backend.
+                          </span>
+                        </div>
+                      </li>
+                    </nav>
+                  </div>
+                </div>
+                <br />
+                <hr
+                  class="MuiDivider-root makeStyles-smallDivider-12"
+                />
+                <br />
+                <div
+                  class="MuiGrid-root MuiGrid-container"
+                >
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      Ramapo College, Mahwah, NJ
+                    </h6>
+                  </div>
+                  <div
+                    align="left"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      ITS Junior Network Technician
+                    </h6>
+                  </div>
+                  <div
+                    align="right"
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-6"
+                  >
+                    <h6
+                      class="MuiTypography-root MuiTypography-h6"
+                    >
+                      June 2012 - January 2015
+                    </h6>
+                  </div>
+                  <div
+                    class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12"
+                  >
+                    <nav
+                      aria-label="main mailbox folders"
+                      class="MuiList-root MuiList-padding"
+                    >
+                      <h5
+                        class="MuiTypography-root MuiTypography-h5"
+                      />
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Supported senior IT staff in creation and maintenance of a school-wide high-speed internet network.
+                          </span>
+                        </div>
+                      </li>
+                      <li
+                        class="MuiListItem-root MuiListItem-gutters"
+                      >
+                        <div
+                          class="MuiListItemIcon-root"
+                        >
+                          <svg
+                            aria-hidden="true"
+                            class="MuiSvgIcon-root"
+                            focusable="false"
+                            viewBox="0 0 24 24"
+                          >
+                            <circle
+                              cx="12"
+                              cy="12"
+                              r="8"
+                            />
+                          </svg>
+                        </div>
+                        <div
+                          class="MuiListItemText-root"
+                        >
+                          <span
+                            class="MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock"
+                          >
+                            Devised and implemented solutions for student network issues while also providing on-site support to professors and residents when necessary.
+                          </span>
+                        </div>
+                      </li>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

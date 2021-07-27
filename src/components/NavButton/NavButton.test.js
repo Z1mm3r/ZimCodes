@@ -11,10 +11,10 @@ import {renderWithRouter} from 'utils/testUtils.js'
   })
 
   test('when the route does not match, is a clickable Link',() =>{
-      renderWithRouter(<NavButton path="/wrong"/>)
+      const {asFragment} = renderWithRouter(<NavButton path="/wrong"/>)
       const linkElement = screen.getByTestId('navButtonLink')
       expect(linkElement).toBeTruthy()
-
+      expect(asFragment()).toMatchSnapshot();
   })
 
   test('when the route does  match, there is no clickable Link',() =>{
