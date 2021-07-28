@@ -10,10 +10,9 @@ react-spring
 
 react-router-dom
 
-
-
-
-
+---Component Testing Using---
+Jest
+React Testing Library
 
 
 
