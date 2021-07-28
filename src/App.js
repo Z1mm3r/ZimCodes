@@ -1,4 +1,4 @@
-import {createMuiTheme, MuiThemeProvider} from '@material-ui/core/styles'
+import {createTheme, MuiThemeProvider} from '@material-ui/core/styles'
 import CssBaseline from '@material-ui/core/CssBaseline'
 import React, {useState, useEffect} from 'react'
 import { Route, Switch, useLocation } from 'react-router-dom'
@@ -26,9 +26,9 @@ function App() {
   //IF we REMOVE React.strict... we can simply pass our themes in from the themes file
   //without using a themeState.
   //
-  const [theme, setTheme] = useState(createMuiTheme(lightTheme))
+  const [theme, setTheme] = useState(createTheme(lightTheme))
   const toggleLighting = () => {
-    setTheme( createMuiTheme (lighting === LIGHT ? darkTheme: lightTheme) )
+    setTheme( createTheme (lighting === LIGHT ? darkTheme: lightTheme) )
     setLighting( lighting === LIGHT ? DARK : LIGHT)
   }
 //----------------------Page Transition Logic--------------------------------------------------------------
