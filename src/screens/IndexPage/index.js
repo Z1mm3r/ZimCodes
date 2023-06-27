@@ -1,8 +1,8 @@
-import React, {useRef, useEffect, useState, useLayoutEffect} from 'react'
+import React, { useRef, useEffect, useState, useLayoutEffect } from 'react'
 import Grid from '@material-ui/core/Grid'
-import {makeStyles} from '@material-ui/core'
+import { makeStyles } from '@material-ui/core'
 
-import { animated, config,useSpring,useTransition } from '@react-spring/web'
+import { animated, config, useSpring, useTransition } from '@react-spring/web'
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 
 import AbsoluteWrapper from 'components/AbsoluteWrapper'
@@ -12,7 +12,7 @@ import ScrollDownText from './ScrollDownText'
 
 import styles from './styles.js'
 
-import {calcLerp} from 'utils/utils'
+import { calcLerp } from 'utils/utils'
 
 
 
@@ -31,11 +31,11 @@ const useStyles = makeStyles(styles)
 
 
 const IndexPage = () => {
-    
+
     const classes = useStyles();
     const parallaxRef = useRef()
 
-    const [scrollVal,setScrollVal] = useState(0)
+    const [scrollVal, setScrollVal] = useState(0)
     const [parallaxSize, setParallaxSize] = useState(0)
     const [parallaxLayer, setParallaxLayer] = useState(null)
 
@@ -43,61 +43,61 @@ const IndexPage = () => {
 
     const handleScroll = () => {
         if (parallaxRef.current) {
-          setScrollVal(parallaxRef.current.current)
+            setScrollVal(parallaxRef.current.current)
         }
     }
 
-    const handleWindowResize = () =>{
-        if(document.querySelector('.test-name > div:first-child'))
-            setParallaxSize(document.querySelector('.test-name > div:first-child').style.height)
+    const handleWindowResize = () => {
+        if (document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child'))
+            setParallaxSize(document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child').style.height)
     }
 
-    useEffect(()=>{
-        if(scrollVal && parallaxSize && parallaxLayer)
-            setLerpVal(calcLerp(parseInt(parallaxLayer.style.height),parallaxSize,scrollVal))
-    },[scrollVal,parallaxSize,parallaxLayer])
+    useEffect(() => {
+        if (scrollVal && parallaxSize && parallaxLayer)
+            setLerpVal(calcLerp(parseInt(parallaxLayer.style.height), parallaxSize, scrollVal))
+    }, [scrollVal, parallaxSize, parallaxLayer])
 
     useEffect(() => {
-        if(document.querySelector('.test-name > div:first-child'))
-            setParallaxSize(parseInt(document.querySelector('.test-name > div:first-child').style.height))
-    },[(document.querySelector('.test-name > div:first-child') ? document.querySelector('.test-name > div:first-child').style.height : null)])
+        if (document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child'))
+            setParallaxSize(parseInt(document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child').style.height))
+    }, [(document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child') ? document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child').style.height : null)])
 
-    useLayoutEffect(()=>{
+    useLayoutEffect(() => {
         setParallaxLayer(document.querySelector('.test-two'))
-    },[document.querySelector('.test-two')])
+    }, [document.querySelector('.test-two')])
 
-    useLayoutEffect(()=>{
-        const container = document.querySelector('.test-name')
-
+    useLayoutEffect(() => {
+        const container = document.querySelector("." + CSS.escape(classes.testName))
+        console.log(CSS.escape(classes.testName))
         container.addEventListener('scroll', handleScroll)
         window.addEventListener('resize', handleWindowResize);
         return () => {
             container.removeEventListener('scroll', handleScroll)
             window.removeEventListener('resize', handleWindowResize);
         }
-    },[])
-    
+    }, [])
+
     //TODO note: offset for tech section was 1.3 -> changed to 1.1 for now
 
-    return(
+    return (
         <AbsoluteWrapper>
-                <Grid  container>
-                    <div className={classes.paraWrap}>      
-                    <Parallax  className={"test-name"} ref={parallaxRef} pages={1.9}>
-                        <ParallaxLayer className={"test-two"} sticky={{start:.1, end:2}}>
+            <Grid container>
+                <div className={classes.paraWrap}>
+                    <Parallax className={classes.testName} ref={parallaxRef} pages={1.9}>
+                        <ParallaxLayer className={"test-two"} sticky={{ start: .1, end: 2 }}>
                             <Grid className={"test-3"} item xs={12}>
-                                <IndexHero lerpVal={lerpVal}/>
+                                <IndexHero lerpVal={lerpVal} />
                                 <ScrollDownText lerpVal={lerpVal} />
                             </Grid>
                         </ParallaxLayer>
                         <ParallaxLayer offset={1.1} speed={.5}>
                             <Grid item xs={12}>
-                                <TechSection lerpVal={lerpVal}/>
+                                <TechSection lerpVal={lerpVal} />
                             </Grid>
                         </ParallaxLayer>
                     </Parallax>
-                    </div>
-                </Grid>
+                </div>
+            </Grid>
         </AbsoluteWrapper>
     )
 }
