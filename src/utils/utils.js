@@ -13,15 +13,15 @@ export const percent = (string) => `${string}%`
 
 export const deg = (string) => `${string}deg`
 
-export const calcLerp = function(v0,v1, t){
+export const calcLerp = function (v0, v1, t) {
     //this is calculating our lerp value.
-    if(t < 0){
-        return 1 
+    if (t < 0) {
+        return 1
     }
 
     let max = v1 - v0
 
-    if(t >= max){
+    if (t >= max) {
         return 0
     }
 
@@ -29,6 +29,10 @@ export const calcLerp = function(v0,v1, t){
 
 }
 
-export const lerp = function(v0,v1,t){
-    return v0 + t * (v1 - v0); 
+export const lerp = function (v0, v1, t) {
+    return v0 + t * (v1 - v0);
+}
+
+export const selectStyles = function (styleClass) {
+    return "." + CSS.escape(styleClass);
 }

@@ -15,7 +15,7 @@ const styles = {
     miniText: {
         fontSize: `${em(4)}`,
     },
-    testName: {
+    parallaxParent: {
         '&::-webkit-scrollbar': {
             display: `none`,
         },

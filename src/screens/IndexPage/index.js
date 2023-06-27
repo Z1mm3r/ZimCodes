@@ -12,7 +12,7 @@ import ScrollDownText from './ScrollDownText'
 
 import styles from './styles.js'
 
-import { calcLerp } from 'utils/utils'
+import { calcLerp, selectStyles } from 'utils/utils'
 
 
 
@@ -48,8 +48,8 @@ const IndexPage = () => {
     }
 
     const handleWindowResize = () => {
-        if (document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child'))
-            setParallaxSize(document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child').style.height)
+        if (document.querySelector(selectStyles(classes.testName) + ' > div:first-child'))
+            setParallaxSize(document.querySelector(selectStyles(classes.testName) + ' > div:first-child').style.height)
     }
 
     useEffect(() => {
@@ -58,17 +58,17 @@ const IndexPage = () => {
     }, [scrollVal, parallaxSize, parallaxLayer])
 
     useEffect(() => {
-        if (document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child'))
-            setParallaxSize(parseInt(document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child').style.height))
-    }, [(document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child') ? document.querySelector("." + CSS.escape(classes.testName) + ' > div:first-child').style.height : null)])
+        if (document.querySelector(selectStyles(classes.parallaxParent) + ' > div:first-child'))
+            setParallaxSize(parseInt(document.querySelector(selectStyles(classes.parallaxParent) + ' > div:first-child').style.height))
+    }, [(document.querySelector(selectStyles(classes.parallaxParent) + ' > div:first-child') ? document.querySelector(selectStyles(classes.parallaxParent) + ' > div:first-child').style.height : null)])
 
     useLayoutEffect(() => {
         setParallaxLayer(document.querySelector('.test-two'))
     }, [document.querySelector('.test-two')])
 
     useLayoutEffect(() => {
-        const container = document.querySelector("." + CSS.escape(classes.testName))
-        console.log(CSS.escape(classes.testName))
+        const container = document.querySelector("." + CSS.escape(classes.parallaxParent))
+        console.log(CSS.escape(classes.parallaxParent))
         container.addEventListener('scroll', handleScroll)
         window.addEventListener('resize', handleWindowResize);
         return () => {
@@ -83,7 +83,7 @@ const IndexPage = () => {
         <AbsoluteWrapper>
             <Grid container>
                 <div className={classes.paraWrap}>
-                    <Parallax className={classes.testName} ref={parallaxRef} pages={1.9}>
+                    <Parallax className={classes.parallaxParent} ref={parallaxRef} pages={1.9}>
                         <ParallaxLayer className={"test-two"} sticky={{ start: .1, end: 2 }}>
                             <Grid className={"test-3"} item xs={12}>
                                 <IndexHero lerpVal={lerpVal} />
